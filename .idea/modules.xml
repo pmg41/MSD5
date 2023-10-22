@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/BaseTempelate.iml" filepath="$PROJECT_DIR$/.idea/modules/BaseTempelate.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BaseTempelate.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BaseTempelate.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BaseTempelate.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BaseTempelate.app.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BaseTempelate.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BaseTempelate.app.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BaseTempelate.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BaseTempelate.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PushPeers.iml" filepath="$PROJECT_DIR$/.idea/modules/PushPeers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PushPeers.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PushPeers.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PushPeers.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PushPeers.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PushPeers.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PushPeers.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PushPeers.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PushPeers.app.unitTest.iml" />
     </modules>
   </component>
 </project>

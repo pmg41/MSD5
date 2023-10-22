@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "150366337582",
+    "project_id": "pushpeers",
+    "storage_bucket": "pushpeers.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:150366337582:android:38a77822a52ed66efd7dbf",
+        "android_client_info": {
+          "package_name": "com.msd5.pushpeers"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfAORyqgSZewLrfh_tAwttSjjiySzFwmY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

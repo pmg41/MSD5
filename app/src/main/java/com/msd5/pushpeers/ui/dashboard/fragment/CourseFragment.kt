@@ -6,13 +6,13 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import com.msd5.pushpeers.base.BaseFragment
-import com.msd5.pushpeers.databinding.FragmentHomeBinding
+import com.msd5.pushpeers.databinding.FragmentCourseBinding
 import com.msd5.pushpeers.ui.dashboard.DashboardVM
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class HomeFragment :
-    BaseFragment<FragmentHomeBinding, DashboardVM>() /*HomeItemListener,Serializable*/ {
+class CourseFragment :
+    BaseFragment<FragmentCourseBinding, DashboardVM>() /*HomeItemListener,Serializable*/ {
 
 
 //    private var categoryWiseMovieList = mutableListOf<CategoryModel>()
@@ -43,8 +43,8 @@ class HomeFragment :
     override fun setBinding(
         layoutInflater: LayoutInflater,
         container: ViewGroup?
-    ): FragmentHomeBinding {
-        return FragmentHomeBinding.inflate(layoutInflater, container, false)
+    ): FragmentCourseBinding {
+        return FragmentCourseBinding.inflate(layoutInflater, container, false)
     }
 
 }

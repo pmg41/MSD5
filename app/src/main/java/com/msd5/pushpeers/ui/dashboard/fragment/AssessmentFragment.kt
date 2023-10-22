@@ -8,14 +8,14 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import com.msd5.pushpeers.base.BaseFragment
-import com.msd5.pushpeers.databinding.FragmentSearchBinding
+import com.msd5.pushpeers.databinding.FragmentAssessmentBinding
 import com.msd5.pushpeers.ui.dashboard.DashboardVM
 import com.msd5.pushpeers.utils.makeGone
 import com.msd5.pushpeers.utils.makeVisible
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class SearchFragment : BaseFragment<FragmentSearchBinding, DashboardVM>() {
+class AssessmentFragment : BaseFragment<FragmentAssessmentBinding, DashboardVM>() {
 
 
     override val viewModel: DashboardVM by activityViewModels()
@@ -82,15 +82,15 @@ class SearchFragment : BaseFragment<FragmentSearchBinding, DashboardVM>() {
     companion object {
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            SearchFragment().apply {
+            AssessmentFragment().apply {
             }
     }
 
     override fun setBinding(
         layoutInflater: LayoutInflater,
         container: ViewGroup?
-    ): FragmentSearchBinding {
-        return FragmentSearchBinding.inflate(layoutInflater, container, false)
+    ): FragmentAssessmentBinding {
+        return FragmentAssessmentBinding.inflate(layoutInflater, container, false)
     }
     
 }
