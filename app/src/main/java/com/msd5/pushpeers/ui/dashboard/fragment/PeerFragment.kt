@@ -1,10 +1,13 @@
 package com.msd5.pushpeers.ui.dashboard.fragment
 
+import android.app.FragmentManager
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.fragment.findNavController
+import com.msd5.pushpeers.R
 import com.msd5.pushpeers.base.BaseFragment
 import com.msd5.pushpeers.databinding.FragmentPeerBinding
 import com.msd5.pushpeers.ui.dashboard.DashboardVM
@@ -26,6 +29,9 @@ class PeerFragment : BaseFragment<FragmentPeerBinding, DashboardVM>() {
         super.onViewCreated(view, savedInstanceState)
         setListener()
         setUpRecyclerView()
+        binding.btnStartchat.setOnClickListener {
+            this.findNavController().navigate(R.id.peer_to_chat_actoin)
+        }
     }
 
     private fun setUpRecyclerView() {

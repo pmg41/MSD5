@@ -1,14 +1,21 @@
 package com.msd5.pushpeers.ui.dashboard.fragment
 
+import android.app.Dialog
+import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.Window
+import android.widget.Button
+import android.widget.TextView
 import androidx.fragment.app.activityViewModels
+import com.msd5.pushpeers.R
 import com.msd5.pushpeers.base.BaseFragment
 import com.msd5.pushpeers.databinding.FragmentAssessmentBinding
+import com.msd5.pushpeers.ui.dashboard.AssesmentResultActivity
 import com.msd5.pushpeers.ui.dashboard.DashboardVM
 import com.msd5.pushpeers.utils.makeGone
 import com.msd5.pushpeers.utils.makeVisible
@@ -31,6 +38,9 @@ class AssessmentFragment : BaseFragment<FragmentAssessmentBinding, DashboardVM>(
         setListener()
         setSearchTextWatcher()
         setUpRecyclerView()
+        binding.btnSubmit.setOnClickListener {
+            startActivity(Intent(requireActivity(),AssesmentResultActivity::class.java))
+        }
     }
 
     private fun setUpRecyclerView() {
@@ -85,6 +95,8 @@ class AssessmentFragment : BaseFragment<FragmentAssessmentBinding, DashboardVM>(
             AssessmentFragment().apply {
             }
     }
+
+
 
     override fun setBinding(
         layoutInflater: LayoutInflater,

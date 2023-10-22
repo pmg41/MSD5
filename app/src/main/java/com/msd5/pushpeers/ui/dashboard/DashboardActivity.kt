@@ -28,7 +28,7 @@ class DashboardActivity : BaseActivity<ActivityDashboardBinding, DashboardVM>(),
     @Override
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding.viewModel = viewModel
+//        binding.viewModel = viewModel
         viewModel.viewInteractor = this
         viewModel.initThings()
         val host: NavHostFragment = supportFragmentManager

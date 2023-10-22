@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.msd5.pushpeers.R
 import com.msd5.pushpeers.databinding.ActivitySplashBinding
 import com.msd5.pushpeers.ui.dashboard.DashboardActivity
+import com.msd5.pushpeers.ui.login.LoginActivity
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -32,7 +33,7 @@ class SplashActivity : AppCompatActivity() {
         }
 //        AudienceNetworkAds.initialize(this)
         Handler(Looper.getMainLooper()).postDelayed({
-            startActivity(DashboardActivity.getIntent(this))
+            startActivity(LoginActivity.getIntent(this))
             finish()
         }, SPLASH_SCREEN_TIME)
 

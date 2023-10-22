@@ -33,6 +33,10 @@
         android:label="ProfileFragment">
 
         <action
+            android:id="@+id/peer_to_chat_actoin"
+            app:destination="@id/chatScreen" />
+
+        <action
             android:id="@+id/action_peerFragment_to_profileFragment2"
             app:destination="@id/profileFragment" />
     </fragment>
@@ -42,6 +46,14 @@
         android:id="@+id/profileFragment"
         android:name="com.msd5.pushpeers.ui.dashboard.fragment.ProfileFragment"
         android:label="PeerFragment">
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/chatScreen"
+        android:name="com.msd5.pushpeers.ui.dashboard.fragment.ChatScreen"
+        android:label="chatscreen">
 
     </fragment>
 

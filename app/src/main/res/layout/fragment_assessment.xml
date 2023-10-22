@@ -61,7 +61,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/searchView">
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
@@ -82,8 +83,142 @@
                 <!--                    tools:itemCount="3"-->
                 <!--                    tools:listitem="@layout/movie_item" />-->
 
+                <TextView
+                    android:text="1. What does OOP Stands for?"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <RadioGroup
+                    android:layout_marginHorizontal="@dimen/_20sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
+                    <RadioButton
+                        android:text="Open Object Programing"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <RadioButton
+                        android:text="Object Oriented Programing"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </RadioGroup>
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+
+                <TextView
+                    android:text="2. Which keyword is used to inherit class?"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <RadioGroup
+                    android:layout_marginHorizontal="@dimen/_20sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:text="Extends"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <RadioButton
+                        android:text="Implements"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </RadioGroup>
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+
+                <TextView
+                    android:text="3. Which keyword is used to inherit interface?"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <RadioGroup
+                    android:layout_marginHorizontal="@dimen/_20sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:text="Extends"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <RadioButton
+                        android:text="Implements"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </RadioGroup>
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+
+
+                <TextView
+                    android:text="4. Which of the following is not a type of loop?"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <RadioGroup
+                    android:layout_marginHorizontal="@dimen/_20sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:text="For loop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <RadioButton
+                        android:text="While loop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <RadioButton
+                        android:text="when loop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <RadioButton
+                        android:text="Do While loop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </RadioGroup>
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btnSubmit"
+                        android:layout_alignParentEnd="true"
+                        android:text="Submit"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
         </androidx.core.widget.NestedScrollView>
 
         <ProgressBar

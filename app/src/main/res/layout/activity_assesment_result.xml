@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.dashboard.AssesmentResultActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="You need to read following thing"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+    <TextView
+        android:textSize="@dimen/_15ssp"
+        android:layout_margin="@dimen/_20sdp"
+        android:text="OOPs, Inheritance, Loops"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_gravity="end"
+        android:layout_marginEnd="20dp"
+        android:text="Back"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

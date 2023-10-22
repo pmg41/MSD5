@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import androidx.activity.viewModels
 import com.msd5.pushpeers.base.BaseActivity
 import com.msd5.pushpeers.databinding.ActivityLoginBinding
+import com.msd5.pushpeers.ui.dashboard.DashboardActivity
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -39,7 +40,16 @@ class LoginActivity : BaseActivity<ActivityLoginBinding, LoginVM>(), LoginContra
 
     @Override
     override fun setUpView() {
+        binding.run {
+            btnLogin.setOnClickListener {
+                val intent =DashboardActivity.getIntent(this@LoginActivity)
+                startActivity(intent)
+            }
+            btnSignup.setOnClickListener {
+                startActivity(Intent(this@LoginActivity,SignupActivity::class.java))
+            }
 
+        }
     }
 
     @Override
