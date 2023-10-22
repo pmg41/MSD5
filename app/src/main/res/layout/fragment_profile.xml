@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp"
+    tools:context=".ui.dashboard.fragment.ProfileFragment">
+
+    <FrameLayout
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_width="150dp"
+
+            android:layout_height="150dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_24ssp"
+            android:text="A"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal|center_vertical"/>
+
+
+    </FrameLayout>
+
+
+   <TextView
+       android:gravity="center"
+       android:textSize="@dimen/_15ssp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Mann"
+       android:textStyle="bold"
+       android:padding="@dimen/_10sdp"
+       android:layout_marginTop="@dimen/_10sdp"/>
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivEmail"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/email"/>
+
+        <TextView
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mann.ambani007@gmail.com"
+            android:layout_toRightOf="@id/ivEmail"/>
+    </RelativeLayout>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivCredits"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/reward"/>
+
+        <TextView
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:id="@+id/tvCredits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Credits"
+            android:layout_toRightOf="@id/ivCredits"/>
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/right_arrow"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+    </RelativeLayout>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivHistory"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/history"/>
+
+        <TextView
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:id="@+id/tvHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Credit History"
+            android:layout_toRightOf="@id/ivHistory"/>
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/right_arrow"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+    </RelativeLayout>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+
+
+</LinearLayout>
