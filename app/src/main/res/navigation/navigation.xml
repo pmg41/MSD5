@@ -3,26 +3,46 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/courseFragment">
 
     <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.msd5.pushpeers.ui.dashboard.fragment.HomeFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home">
+        android:id="@+id/courseFragment"
+        android:name="com.msd5.pushpeers.ui.dashboard.fragment.CourseFragment"
+        android:label="CourseFragment"
+        tools:layout="@layout/fragment_course">
+
         <action
-            android:id="@+id/action_homeFragment_to_searchFragment"
-            app:destination="@id/searchFragment" />
+            android:id="@+id/action_courseFragment_to_assessmentFragment"
+            app:destination="@id/assessmentFragment" />
     </fragment>
 
 
+    <fragment
+        android:id="@+id/assessmentFragment"
+        android:name="com.msd5.pushpeers.ui.dashboard.fragment.AssessmentFragment"
+        android:label="AssessmentFragment">
+
+        <action
+            android:id="@+id/action_assessmentFragment_to_peerFragment"
+            app:destination="@id/peerFragment" />
+    </fragment>
 
     <fragment
-        android:id="@+id/searchFragment"
-        android:name="com.msd5.pushpeers.ui.dashboard.fragment.SearchFragment"
-        android:label="SearchFragment">
+        android:id="@+id/peerFragment"
+        android:name="com.msd5.pushpeers.ui.dashboard.fragment.PeerFragment"
+        android:label="ProfileFragment">
+
         <action
-            android:id="@+id/action_searchFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
+            android:id="@+id/action_peerFragment_to_profileFragment2"
+            app:destination="@id/profileFragment" />
     </fragment>
+
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.msd5.pushpeers.ui.dashboard.fragment.ProfileFragment"
+        android:label="PeerFragment">
+
+    </fragment>
+
 </navigation>
