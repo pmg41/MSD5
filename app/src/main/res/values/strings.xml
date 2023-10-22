@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PushPeers</string>
+    <string name="attach_kr">%s Kr</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="splash">Splash</string>
+    <string name="screen">Screen</string>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:drawable="@drawable/search_round_bg" />
+    <item android:drawable="@drawable/ic_close_24"
+        android:top="5sp"
+        android:bottom="5sp"
+        android:left="5sp"
+        android:end="5sp"
+        />
+</layer-list>
